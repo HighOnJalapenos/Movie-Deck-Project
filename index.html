@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Movie Deck</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <header class="header">
+        <div class="icon">
+          <a href="#index.html"><h1>Movie Deck</h1></a>
+        </div>
+
+        <form class="search">
+          <div class="searchbar">
+            <input
+              type="search"
+              class="search-movies"
+              placeholder="Enter the movie/show name"
+            />
+            <button type="button" class="search-button">Search</button>
+          </div>
+        </form>
+      </header>
+    </nav>
+
+    <section class="sorting-bar">
+      <button class="sorting-button" id="sort-by-date">
+        Sort by Date(oldest to newest)
+      </button>
+      <button class="sorting-button" id="sort-by-rating">
+        Sort by Rating(High to Low)
+      </button>
+    </section>
+
+    <main class="main">
+      <div class="tab">
+        <button id="all-tab" class="tab-button all-tab active-tab">All</button>
+        <button id="favorites-tab" class="tab-button favorites-tab">
+          Favorites
+        </button>
+      </div>
+
+      <div id="movies-card-container"></div>
+
+      <div class="pagination">
+        <button class="pagination-button" id="prev-button">Previous</button>
+        <button class="pagination-button" id="current-page-button">
+          Current Page: 1
+        </button>
+        <button class="pagination-button" id="next-button">Next</button>
+      </div>
+    </main>
+  </body>
+</html>
